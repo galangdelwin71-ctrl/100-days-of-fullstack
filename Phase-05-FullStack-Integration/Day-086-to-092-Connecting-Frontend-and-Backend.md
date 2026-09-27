@@ -1,71 +1,70 @@
 # 🎯 Days 86–92: Full-Stack Integration (React + Express + MySQL)
 
-Dito pagtatagpuin ang lahat ng inyong natutunan! Ikokonekta ninyo ang React Frontend sa Express Backend at MySQL Database para maging isang buong Full-Stack Application.
+Here everything comes together. You will connect your React frontend to your Express backend and MySQL database, producing a unified Full-Stack Web Application.
 
 ---
 
 ### 📅 Day 86: Client-Server Architecture Overview
-- **Konsepto**: Paano nag-uusap ang Frontend at Backend sa totoong mundo?
-  - Frontend tumatakbo sa `http://localhost:5173` (Vite).
-  - Backend tumatakbo sa `http://localhost:5000` (Express).
-  - Axios HTTP client setup (`npm install axios`).
-  - Base URL configuration (`axios.create({ baseURL: 'http://localhost:5000/api' })`).
-- **Activity**: Mag-setup ng monorepo o dalawang magkatabing folders (`/client` at `/server`) at subukang mag-fetch ng data mula sa React papuntang Express.
-- **Output**: `day-86-fullstack-setup/`
+- **Concepts**: How do modern frontend and backend applications communicate?
+  - Frontend runs on `http://localhost:5173` (Vite).
+  - Backend runs on `http://localhost:5000` (Express).
+  - Installing and setting up Axios: `npm install axios`.
+  - Creating a centralized API client: `axios.create({ baseURL: 'http://localhost:5000/api' })`.
+- **Activity**: Set up a project structure with `/client` and `/server` and successfully fetch data from Express into React.
+- **Deliverable**: `day-86-fullstack-setup/`
 
 ---
 
 ### 📅 Day 87: Axios Client with Auth Interceptors
-- **Konsepto**: Paano hindi mano-manong ilalagay ang Bearer token sa bawat API call?
-  - Axios Request Interceptor: Kusa nitong kukunin ang token mula sa LocalStorage at ididikit sa `Authorization` header bago lumipad ang request.
-- **Activity**: I-code ang reusable `api.js` Axios instance na may token interceptor.
-- **Output**: `day-87-axios-interceptors/`
+- **Concepts**: Eliminating manual token injection on every HTTP call:
+  - Axios Request Interceptors: Automatically intercept every outgoing request, read the JWT from storage, and attach the `Authorization: Bearer <token>` header.
+- **Activity**: Implement an `api.js` client module with an automated token interceptor.
+- **Deliverable**: `day-87-axios-interceptors/`
 
 ---
 
-### 📅 Day 88: Auth Context & Persistent Login State in React
-- **Konsepto**: Global state para sa authentication:
-  - React Context API (`AuthContext` at `useAuth()` custom hook).
-  - State: `user`, `token`, `isAuthenticated`, `login()`, `logout()`.
-  - Pag-refresh ng page: Kusa nitong babasahin ang token sa LocalStorage para hindi ma-logout ang user.
-- **Activity**: Gumawa ng Login at Register pages sa React na konektado sa backend.
-- **Output**: `day-88-auth-context/`
+### 📅 Day 88: React Auth Context & Persistent Sessions
+- **Concepts**: Managing global authentication state across your React app:
+  - React Context API (`AuthContext` and custom `useAuth()` hook).
+  - States: `user`, `token`, `isAuthenticated`, `login()`, `logout()`.
+  - Session hydration: Reading the stored token on initial page load to keep users logged in across browser refreshes.
+- **Activity**: Build functional Login and Register pages in React that update global authentication context.
+- **Deliverable**: `day-88-auth-context/`
 
 ---
 
 ### 📅 Day 89: Protected Route Guards in React
-- **Konsepto**: Paano pigilan ang mga hindi naka-login na pumunta sa `/dashboard`?
-  - `<ProtectedRoute>` wrapper component.
-  - Redirect papuntang `/login` kapag walang active session.
-- **Activity**: I-wrap ang Dashboard view sa Protected Route component.
-- **Output**: `day-89-protected-routes/`
+- **Concepts**: Preventing unauthorized users from accessing private routes (e.g. `/dashboard`):
+  - Creating a reusable `<ProtectedRoute>` wrapper component.
+  - Redirecting unauthenticated visitors to `/login`.
+- **Activity**: Wrap private dashboard views inside your Protected Route component and test route protection.
+- **Deliverable**: `day-89-protected-routes/`
 
 ---
 
-### 📅 Day 90: UI Loading States, Modals & Toast Notifications
-- **Konsepto**: Professional user feedback.
-  - Huwag i-freeze ang UI habang naghihintay ng server response.
-  - `react-hot-toast` para sa mga mensahe ("Login successful!", "Product added!").
-  - Confirmation modals bago mag-delete.
-- **Activity**: Mag-install ng `react-hot-toast` at magpakita ng toast notifications sa bawat CRUD action.
-- **Output**: `day-90-ui-feedback/`
+### 📅 Day 90: UI Feedback: Spinners, Modals & Toast Alerts
+- **Concepts**: Delivering commercial user experience:
+  - Never let the interface freeze during asynchronous network operations.
+  - Integrating `react-hot-toast` for alert messages ("Login successful!", "Product updated!").
+  - Confirmation modals prior to destructive deletion actions.
+- **Activity**: Integrate toast notifications and loading indicators across all CRUD operations.
+- **Deliverable**: `day-90-ui-feedback/`
 
 ---
 
-### 📅 Day 91: Handling Image & File Uploads (Multer)
-- **Konsepto**: Paano mag-upload ng product pictures o user avatars?
-  - Backend: `npm install multer` para mag-save ng files sa `uploads/` folder.
-  - Frontend: `FormData` API (`const formData = new FormData(); formData.append('image', file);`).
-- **Activity**: Gumawa ng image upload feature para sa isang profile picture o product item.
-- **Output**: `day-91-file-upload/`
+### 📅 Day 91: Multipart File & Image Uploads (Multer + FormData)
+- **Concepts**: Handling media uploads across the stack:
+  - Backend: `npm install multer` to accept and store files in an `uploads/` directory.
+  - Frontend: Packaging binary files using browser `FormData`: `formData.append('image', file)`.
+- **Activity**: Implement a file upload form that uploads product images or profile avatars to the server.
+- **Deliverable**: `day-91-file-upload/`
 
 ---
 
-### 📅 Day 92: Environment Variables (`.env`) & Secrets Security
-- **Konsepto**: ⚠️ Huwag i-commit ang database passwords at JWT secrets sa GitHub!
-  - `npm install dotenv`
-  - `.env` file (ilagay sa `.gitignore`).
-  - `.env.example` file (template na walang totoong passwords para sa kaibigan mo).
-  - Frontend env: `VITE_API_URL`.
-- **Activity**: I-linis ang lahat ng hardcoded URLs at secrets gamit ang `.env` files sa client at server.
-- **Output**: `day-92-env-clean/`
+### 📅 Day 92: Environment Variables & Secrets Management
+- **Concepts**: ⚠️ Never commit database credentials or JWT secrets to GitHub!
+  - Backend: `npm install dotenv` and `.env` configuration.
+  - Frontend: `VITE_API_URL` configuration.
+  - Maintaining `.env.example` templates for team collaborators.
+- **Activity**: Sanitize all hardcoded URLs and secrets across both client and server codebases into `.env` files.
+- **Deliverable**: `day-92-env-clean/`

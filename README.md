@@ -1,58 +1,58 @@
 # 🚀 100 Days of Full-Stack Web Development: Zero to Hireable
 
-Isang komprehensibo, practical, at day-by-day study roadmap para sa magkaibigan na gustong maging **Full-Stack Web Developers** na handang mag-apply sa mga kumpanya.
+A comprehensive, industry-aligned, and day-by-day learning curriculum designed for aspiring **Full-Stack Software Engineers**. Built to take you from foundational web mechanics to building, securing, and deploying enterprise-ready applications.
 
 ---
 
-## 🎯 Bakit Ito Ang Tech Stack? (Company & Industry Standard)
+## 🎯 Why This Tech Stack? (Industry & Employer Standard)
 
-Sa mga tech companies, software agencies, at remote jobs ngayon (lokal at international), ito ang pinaka-in-demand na Full-Stack stack para sa mga junior hanggang mid-level roles:
+Modern tech companies, startups, and remote engineering teams prioritize full-stack developers proficient in the JavaScript/TypeScript and SQL ecosystem:
 
-| Layer | Technology | Bakit Ito Ang Hinahanap ng Kumpanya? |
+| Layer | Technology | Why Companies Value This |
 | :--- | :--- | :--- |
-| **Frontend** | **HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React.js** | React ang nangungunang UI library sa buong mundo. Kapag marunong ka ng component logic, state, at modern UI, pasok ka sa standards. |
-| **Backend** | **Node.js + Express.js** | JavaScript sa Frontend, JavaScript din sa Backend! Hindi ka palipat-lipat ng programming language syntax, kaya mas mabilis ma-master ang API architecture. |
-| **Database** | **MySQL / PostgreSQL** | Relational databases ang backbone ng banking, e-commerce, at enterprise enterprise systems. Alam mo dapat ang tables, primary/foreign keys, joins, at normalization. |
-| **Tools & Workflow** | **Git, GitHub, Postman, Vercel, Render** | Ito ang eksaktong tools na ginagamit sa totoong trabaho araw-araw. |
+| **Frontend** | **HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React.js** | React is the global #1 frontend standard. Mastering component hierarchies, state management, and modern responsive UI qualifies you directly for frontend & full-stack roles. |
+| **Backend** | **Node.js + Express.js** | JavaScript on both client and server reduces cognitive load and allows seamless context switching. Express teaches core HTTP mechanics, REST design, and middleware pipelines. |
+| **Database** | **MySQL / Relational SQL** | Relational databases power financial, commerce, and enterprise systems. Developers must master table design, constraints, indexing, normalization, and complex multi-table joins. |
+| **Tooling & Cloud** | **Git, GitHub, Postman, Vercel, Render** | Mirrors the exact daily workflow of software engineering teams in production environments. |
 
 ---
 
-## 🗺️ 100 Days Roadmap Breakdown
+## 🗺️ 100-Day Curriculum Architecture
 
 ```
-[Phase 1: Days 01-30] ──► Frontend Foundations (HTML5, Modern CSS, Responsive Design, JS DOM & Logic)
-[Phase 2: Days 31-50] ──► Modern JavaScript (ES6+, Async, APIs) & React.js Components
-[Phase 3: Days 51-70] ──► Database Engineering (MySQL, Schema Design, Complex Queries, CRUD)
-[Phase 4: Days 71-85] ──► Backend Engineering (Node.js, Express, RESTful APIs, JWT Auth, Security)
+[Phase 1: Days 01-30] ──► Frontend Foundations (Semantic HTML5, Box Model, Responsive Layouts, DOM & Logic)
+[Phase 2: Days 31-50] ──► Modern JavaScript (ES6+, Async/Await, REST APIs) & React.js Components
+[Phase 3: Days 51-70] ──► Database Engineering (MySQL, Relational Modeling, Complex Queries, Joins, CRUD)
+[Phase 4: Days 71-85] ──► Backend Architecture (Node.js, Express, RESTful APIs, JWT Auth, Security)
 [Phase 5: Days 86-92] ──► Full-Stack Integration (React + Express + MySQL End-to-End)
-[Phase 6: Days 93-100]──► Capstone Project, Cloud Deployment & Job Interview Readiness
+[Phase 6: Days 93-100]──► Production Capstone Platform, Cloud Deployment & Technical Interview Prep
 ```
 
 ---
 
-## 🤝 Rules ng Buddy System (Para Matapos Ninyo Nang Sabay)
+## 🤝 Study Buddy Collaboration Guidelines
 
-1. **Commit Daily sa GitHub**: Walang araw na hindi magko-commit kahit 30 minutes hanggang 1 hour lang.
-2. **Reviewhin ang Code ng Isa't Isa**: Bago matulog, buksan ang GitHub repo ng kaibigan mo. Magtanong kung may hindi naintindihan.
-3. **Weekly Sync & Demo**: Tuwing Day 10, 20, 30... (bawat 10 araw), mag-demo kayo sa isa't isa ng natapos ninyong mini-project.
-4. **Huwag Mag-Copy Paste**: I-type ang code gamit ang sariling mga kamay para magkaroon ng muscle memory.
-5. **Gamitin ang Tracker**: I-update ang [TRACKER.md](./TRACKER.md) araw-araw.
+1. **Commit Daily**: Push code to GitHub every single day—consistency beats intensity.
+2. **Peer Code Review**: Review each other's commits, leave comments, and question architectural choices.
+3. **Weekly Sync & Demo**: Every 10 days, schedule a live demo of the milestone project built during that cycle.
+4. **Type Everything Manually**: Avoid copy-pasting code. Build tactile muscle memory for syntax, design patterns, and debugging.
+5. **Maintain Your Tracker**: Record daily progress in [TRACKER.md](./TRACKER.md).
 
 ---
 
-## 📂 Mga Folder ng Modules
+## 📂 Module Directories
 
-- 📋 **[TRACKER.md](./TRACKER.md)** — Interactive checklist ng Day 1 hanggang Day 100 para sa inyong dalawa.
+- 📋 **[TRACKER.md](./TRACKER.md)** — Interactive Day 1 to 100 checklist for you and your study partner.
 - 📁 **[Phase-01-Frontend-Basics](./Phase-01-Frontend-Basics)**
-  - [Days 1–10: HTML & CSS Fundamentals](./Phase-01-Frontend-Basics/Day-001-to-010-HTML-and-CSS-Fundamentals.md)
+  - [Days 01–10: HTML & CSS Fundamentals](./Phase-01-Frontend-Basics/Day-001-to-010-HTML-and-CSS-Fundamentals.md)
   - [Days 11–20: Responsive Design, Flexbox & Grid](./Phase-01-Frontend-Basics/Day-011-to-020-Responsive-Design-and-CSS-Grid-Flexbox.md)
   - [Days 21–30: JavaScript Logic & DOM Manipulation](./Phase-01-Frontend-Basics/Day-021-to-030-JavaScript-Logic-and-DOM.md)
 - 📁 **[Phase-02-Modern-JS-and-React](./Phase-02-Modern-JS-and-React)**
   - [Days 31–40: Modern ES6+, Async/Await & Fetch API](./Phase-02-Modern-JS-and-React/Day-031-to-040-Modern-JS-ES6-Async-Fetch.md)
   - [Days 41–50: React Components, Props, State & Hooks](./Phase-02-Modern-JS-and-React/Day-041-to-050-React-Components-and-State.md)
 - 📁 **[Phase-03-Database-and-SQL](./Phase-03-Database-and-SQL)**
-  - [Days 51–60: Relational DBs, MySQL & Basic Queries](./Phase-03-Database-and-SQL/Day-051-to-060-Relational-DB-and-MySQL.md)
-  - [Days 61–70: Schema Normalization, Joins & Database Design](./Phase-03-Database-and-SQL/Day-061-to-070-Database-Design-and-CRUD.md)
+  - [Days 51–60: Relational Databases, MySQL & Queries](./Phase-03-Database-and-SQL/Day-051-to-060-Relational-DB-and-MySQL.md)
+  - [Days 61–70: Normalization, Joins & Database Design](./Phase-03-Database-and-SQL/Day-061-to-070-Database-Design-and-CRUD.md)
 - 📁 **[Phase-04-Backend-and-APIs](./Phase-04-Backend-and-APIs)**
   - [Days 71–80: Node.js, Express & RESTful APIs](./Phase-04-Backend-and-APIs/Day-071-to-080-NodeJS-Express-and-REST-APIs.md)
   - [Days 81–85: User Authentication, Hashing & JWT Security](./Phase-04-Backend-and-APIs/Day-081-to-085-Authentication-JWT-and-Security.md)
@@ -63,16 +63,16 @@ Sa mga tech companies, software agencies, at remote jobs ngayon (lokal at intern
 
 ---
 
-## 🏆 Mga Mini-Projects na Mabubuo Ninyo
+## 🏆 Milestone Portfolio Projects
 
 1. **Day 10**: Responsive Developer Profile Card
 2. **Day 20**: Modern Business / Product Landing Page with Dark Mode
-3. **Day 30**: Interactive Task & Budget Tracker (LocalStorage)
-4. **Day 40**: Real-Time Weather & Currency Explorer (Public REST API)
-5. **Day 50**: Movie Search & Bookmark App (React.js)
-6. **Day 60**: University / Inventory Database Design & SQL Scripts
-7. **Day 70**: Complex E-Commerce Database Schema with Joins & Views
+3. **Day 30**: Interactive Task & Expense Manager (LocalStorage CRUD)
+4. **Day 40**: Real-Time Live API Weather & Analytics Dashboard
+5. **Day 50**: Movie Search & Favorites Platform (React.js SPA)
+6. **Day 60**: Inventory & University Relational Database Schema & DDL/DML Scripts
+7. **Day 70**: Complex E-Commerce Database Schema with Joins, Indexes & Views
 8. **Day 80**: Full Products & Categories REST API (Express + MySQL)
-9. **Day 85**: Secure User Auth System (JWT, bcrypt, Protected Endpoints)
+9. **Day 85**: Secure User Authentication & RBAC Service (JWT, bcrypt)
 10. **Day 92**: Complete Full-Stack Note / Order App with React & Express
-11. **Day 93–100 (Grand Capstone)**: **Full-Stack SaaS Platform (E-Commerce or Service Booking)** na naka-deploy sa internet!
+11. **Day 93–100 (Grand Capstone)**: **Production-Grade Full-Stack SaaS Platform** deployed live on the internet!

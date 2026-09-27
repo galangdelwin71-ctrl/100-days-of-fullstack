@@ -1,106 +1,106 @@
 # 📊 100 Days Progress Tracker
 
-Markahan ito ng `[x]` kapag natapos ninyo ang bawat araw.
+Mark with `[x]` as you complete each day's challenge.
 
-| Day | Topic / Challenge | Ikaw (Status) | Kaibigan (Status) | GitHub Commit Link |
+| Day | Topic / Challenge | Developer 1 | Developer 2 | Commit / PR Link |
 |:---:|:---|:---:|:---:|:---|
 | **01** | Web Anatomy & Semantic HTML5 | [ ] | [ ] | |
 | **02** | HTML Forms, Validation & Inputs | [ ] | [ ] | |
-| **03** | CSS Box Model & Specificity | [ ] | [ ] | |
-| **04** | Modern Typography & Color Systems | [ ] | [ ] | |
+| **03** | CSS Box Model, Specificity & Units | [ ] | [ ] | |
+| **04** | Modern Typography, Colors & Contrast | [ ] | [ ] | |
 | **05** | CSS Positioning (Relative, Absolute, Fixed) | [ ] | [ ] | |
-| **06** | Flexbox Container Properties | [ ] | [ ] | |
-| **07** | Flexbox Items & Alignment | [ ] | [ ] | |
-| **08** | CSS Grid Layout & Columns | [ ] | [ ] | |
-| **09** | CSS Grid Areas & Auto-Fit | [ ] | [ ] | |
+| **06** | Flexbox Container Properties & Axis Alignment | [ ] | [ ] | |
+| **07** | Flexbox Items, Growth & Wrapping | [ ] | [ ] | |
+| **08** | CSS Grid Layout, Tracks & Fractional Units | [ ] | [ ] | |
+| **09** | CSS Grid Template Areas & Auto-Fit | [ ] | [ ] | |
 | **10** | **Project #1: Responsive Profile Card** | [ ] | [ ] | |
-| **11** | Mobile-First Media Queries | [ ] | [ ] | |
-| **12** | CSS Custom Properties (Dark Mode) | [ ] | [ ] | |
-| **13** | Transitions & Hover Micro-interactions | [ ] | [ ] | |
-| **14** | Keyframe Animations & Loaders | [ ] | [ ] | |
-| **15** | Tailwind CSS Fundamentals | [ ] | [ ] | |
-| **16** | UI/UX Principles for Developers | [ ] | [ ] | |
-| **17** | Figma to Code Workflow | [ ] | [ ] | |
+| **11** | Mobile-First Media Queries & Breakpoints | [ ] | [ ] | |
+| **12** | CSS Custom Properties & Dark Mode Engine | [ ] | [ ] | |
+| **13** | Transitions, Transforms & Micro-Interactions | [ ] | [ ] | |
+| **14** | Keyframe Animations & Skeleton Loaders | [ ] | [ ] | |
+| **15** | Tailwind CSS Fundamentals & Utility Architecture | [ ] | [ ] | |
+| **16** | UI/UX Principles for Engineers (CRAP Rules) | [ ] | [ ] | |
+| **17** | Figma-to-Code: Pixel-Perfect Translation | [ ] | [ ] | |
 | **18** | Responsive Navigation & Hamburger Drawer | [ ] | [ ] | |
-| **19** | Responsive Pricing & Features Grid | [ ] | [ ] | |
-| **20** | **Project #2: Modern Landing Page** | [ ] | [ ] | |
-| **21** | JS Variables, Data Types & Operators | [ ] | [ ] | |
-| **22** | Logic Building: If/Else & Switch | [ ] | [ ] | |
-| **23** | Loops & Array Fundamentals | [ ] | [ ] | |
-| **24** | Modern Array Methods (map, filter, reduce) | [ ] | [ ] | |
-| **25** | Functions, Arrow Syntax & Scope | [ ] | [ ] | |
-| **26** | Objects, Destructuring & Spread Syntax | [ ] | [ ] | |
-| **27** | DOM Selection & Class Manipulation | [ ] | [ ] | |
-| **28** | DOM Events & Delegation | [ ] | [ ] | |
-| **29** | LocalStorage & SessionStorage | [ ] | [ ] | |
-| **30** | **Project #3: Interactive Task Manager** | [ ] | [ ] | |
-| **31** | Event Loop & Asynchronous JavaScript | [ ] | [ ] | |
-| **32** | Promises & Error Handling | [ ] | [ ] | |
-| **33** | Async/Await Best Practices | [ ] | [ ] | |
-| **34** | Fetch API: GET Requests | [ ] | [ ] | |
-| **35** | Fetch API: POST, PUT, DELETE | [ ] | [ ] | |
-| **36** | Handling API Errors & Loading States | [ ] | [ ] | |
-| **37** | NPM, Package.json & Vite Setup | [ ] | [ ] | |
-| **38** | Git Team Workflow (Branching & PRs) | [ ] | [ ] | |
-| **39** | Chrome DevTools Network & Debugging | [ ] | [ ] | |
-| **40** | **Project #4: Real-Time API Dashboard** | [ ] | [ ] | |
-| **41** | React Intro: Components & JSX | [ ] | [ ] | |
-| **42** | React Props & Component Reusability | [ ] | [ ] | |
-| **43** | React `useState` & Reactive UI | [ ] | [ ] | |
-| **44** | Controlled Forms & Inputs in React | [ ] | [ ] | |
-| **45** | Conditional Rendering & List Keys | [ ] | [ ] | |
-| **46** | `useEffect`: Data Fetching on Mount | [ ] | [ ] | |
-| **47** | Cleanup Functions & Memory Leaks | [ ] | [ ] | |
-| **48** | Lifting State Up & Parent-Child Comms | [ ] | [ ] | |
-| **49** | Styling React with Tailwind | [ ] | [ ] | |
-| **50** | **Project #5: React Movie Search App** | [ ] | [ ] | |
-| **51** | Database Concepts & Primary Keys | [ ] | [ ] | |
-| **52** | Setting Up MySQL & phpMyAdmin / GUI | [ ] | [ ] | |
-| **53** | SQL Data Types & Constraints | [ ] | [ ] | |
-| **54** | DDL: CREATE, ALTER, DROP Tables | [ ] | [ ] | |
-| **55** | DML: INSERT, SELECT & WHERE Clauses | [ ] | [ ] | |
-| **56** | Filtering: LIKE, BETWEEN, IN, NULL | [ ] | [ ] | |
-| **57** | Sorting & Pagination (ORDER BY, LIMIT) | [ ] | [ ] | |
-| **58** | UPDATE, DELETE & Safe Execution | [ ] | [ ] | |
-| **59** | Aggregate Functions & GROUP BY | [ ] | [ ] | |
-| **60** | **Project #6: Inventory Database Schema** | [ ] | [ ] | |
-| **61** | Foreign Keys & Relationships (1:N, N:M) | [ ] | [ ] | |
-| **62** | Database Normalization (1NF, 2NF, 3NF) | [ ] | [ ] | |
-| **63** | SQL INNER JOIN & LEFT JOIN | [ ] | [ ] | |
-| **64** | Multi-table Joins & Real-world Queries | [ ] | [ ] | |
-| **65** | Subqueries & Common Table Expressions | [ ] | [ ] | |
-| **66** | Database Indexes & Query Performance | [ ] | [ ] | |
-| **67** | Database Transactions (ACID Rules) | [ ] | [ ] | |
-| **68** | SQL Injection Prevention & Prepared Stmts | [ ] | [ ] | |
-| **69** | Database Backups, Dumps & Migrations | [ ] | [ ] | |
-| **70** | **Project #7: Normalized E-Commerce DB** | [ ] | [ ] | |
-| **71** | Node.js Runtime & Server Architecture | [ ] | [ ] | |
-| **72** | Express.js Basics & Hello World Server | [ ] | [ ] | |
-| **73** | REST API Architecture & HTTP Codes | [ ] | [ ] | |
-| **74** | Express Routing & Request Parameters | [ ] | [ ] | |
-| **75** | Express Middleware & CORS Configuration | [ ] | [ ] | |
-| **76** | Connecting Node.js to MySQL (Pools) | [ ] | [ ] | |
-| **77** | Building Full CRUD Endpoints | [ ] | [ ] | |
-| **78** | MVC Architecture (Controllers & Models) | [ ] | [ ] | |
-| **79** | Input Validation (Zod / Express-Validator) | [ ] | [ ] | |
-| **80** | **Project #8: Products Management API** | [ ] | [ ] | |
-| **81** | Password Hashing with Bcrypt | [ ] | [ ] | |
-| **82** | JWT Authentication Concepts | [ ] | [ ] | |
-| **83** | Register & Login Authentication Flow | [ ] | [ ] | |
-| **84** | Protected Routes Middleware | [ ] | [ ] | |
-| **85** | Role-Based Access Control (Admin/User) | [ ] | [ ] | |
-| **86** | Full-Stack Architecture: React to Express | [ ] | [ ] | |
-| **87** | Axios Client & Auth Interceptors | [ ] | [ ] | |
-| **88** | Auth Context & Persistent Login State | [ ] | [ ] | |
-| **89** | React Protected Route Guards | [ ] | [ ] | |
-| **90** | UI Loading States & Toast Notifications | [ ] | [ ] | |
-| **91** | File Uploads (Multer & FormData) | [ ] | [ ] | |
-| **92** | Environment Variables & API Secrets | [ ] | [ ] | |
-| **93** | Capstone: System Requirements & ERD | [ ] | [ ] | |
-| **94** | Capstone: Database Setup & Core Models | [ ] | [ ] | |
-| **95** | Capstone: Backend Auth & API Endpoints | [ ] | [ ] | |
-| **96** | Capstone: Frontend UI & State Connection | [ ] | [ ] | |
-| **97** | Capstone: Core Business Logic & Features | [ ] | [ ] | |
-| **98** | Capstone: Bug Fixing & UI Polish | [ ] | [ ] | |
-| **99** | Capstone: Cloud Deployment (Vercel/Render)| [ ] | [ ] | |
-| **100**| **Graduation: Portfolio, Resume & Interviews** | [ ] | [ ] | |
+| **19** | Responsive Feature & Pricing Tables | [ ] | [ ] | |
+| **20** | **Project #2: Modern Business Landing Page** | [ ] | [ ] | |
+| **21** | JS Variables, Data Types & Strict Equality | [ ] | [ ] | |
+| **22** | Conditional Logic, Guard Clauses & Ternaries | [ ] | [ ] | |
+| **23** | Iteration, Loops & Array Fundamentals | [ ] | [ ] | |
+| **24** | Functional Array Methods (map, filter, reduce) | [ ] | [ ] | |
+| **25** | Functions, Arrow Syntax, Scope & Closures | [ ] | [ ] | |
+| **26** | Objects, Destructuring & Spread/Rest Syntax | [ ] | [ ] | |
+| **27** | DOM Traversal, Querying & Manipulation | [ ] | [ ] | |
+| **28** | DOM Events, Bubbling & Event Delegation | [ ] | [ ] | |
+| **29** | Browser Storage: LocalStorage & SessionStorage | [ ] | [ ] | |
+| **30** | **Project #3: Interactive Task & Budget Tracker** | [ ] | [ ] | |
+| **31** | The Event Loop & Asynchronous JavaScript | [ ] | [ ] | |
+| **32** | Promises, Chaining & Error Handling | [ ] | [ ] | |
+| **33** | Async/Await Syntax & Try/Catch Patterns | [ ] | [ ] | |
+| **34** | Fetch API: Consuming External GET Endpoints | [ ] | [ ] | |
+| **35** | Fetch API: Mutations (POST, PUT, DELETE) | [ ] | [ ] | |
+| **36** | Handling API States: Loading, Error & Empty | [ ] | [ ] | |
+| **37** | Node.js Runtime, NPM & Vite Bundler Setup | [ ] | [ ] | |
+| **38** | Team Git Workflow: Branches, PRs & Merge Conflicts | [ ] | [ ] | |
+| **39** | Chrome DevTools: Network Tab & Performance Debugging | [ ] | [ ] | |
+| **40** | **Project #4: Live API Weather & Analytics Dashboard** | [ ] | [ ] | |
+| **41** | React Architecture, Virtual DOM & JSX Syntax | [ ] | [ ] | |
+| **42** | React Props, Composition & Reusability | [ ] | [ ] | |
+| **43** | State Management with `useState` & Immutability | [ ] | [ ] | |
+| **44** | Controlled Form Components & Form Handling | [ ] | [ ] | |
+| **45** | Conditional Rendering & List Keys Optimization | [ ] | [ ] | |
+| **46** | Side Effects with `useEffect` (Data Fetching) | [ ] | [ ] | |
+| **47** | Effect Cleanups, Memory Leaks & AbortControllers | [ ] | [ ] | |
+| **48** | Lifting State Up & Component Communication | [ ] | [ ] | |
+| **49** | Styling React Applications with Tailwind CSS | [ ] | [ ] | |
+| **50** | **Project #5: React Movie Search & Favorites App** | [ ] | [ ] | |
+| **51** | Relational Database Theory & Primary Key Constraints | [ ] | [ ] | |
+| **52** | MySQL Server Installation & GUI Client Setup | [ ] | [ ] | |
+| **53** | SQL Data Types, Storage Precision & Constraints | [ ] | [ ] | |
+| **54** | DDL Mechanics: CREATE, ALTER, DROP & TRUNCATE | [ ] | [ ] | |
+| **55** | DML Basics: INSERT, SELECT & Projection | [ ] | [ ] | |
+| **56** | Query Filtering: WHERE, LIKE, IN, BETWEEN & NULL | [ ] | [ ] | |
+| **57** | Sorting & Pagination: ORDER BY, LIMIT, OFFSET | [ ] | [ ] | |
+| **58** | UPDATE, DELETE & Safe Mutation Practices | [ ] | [ ] | |
+| **59** | Aggregations: COUNT, SUM, AVG, GROUP BY & HAVING | [ ] | [ ] | |
+| **60** | **Project #6: Inventory Database Schema & Scripts** | [ ] | [ ] | |
+| **61** | Foreign Keys, Referential Integrity & Relationships | [ ] | [ ] | |
+| **62** | Database Normalization: 1NF, 2NF & 3NF Rules | [ ] | [ ] | |
+| **63** | SQL Joins Part 1: INNER JOIN vs LEFT JOIN | [ ] | [ ] | |
+| **64** | SQL Joins Part 2: Multi-Table Production Queries | [ ] | [ ] | |
+| **65** | Subqueries, Scalar Queries & Nested SELECT Statements | [ ] | [ ] | |
+| **66** | Database Indexing, B-Trees & Query Optimization | [ ] | [ ] | |
+| **67** | ACID Transactions: COMMIT, ROLLBACK & Isolation | [ ] | [ ] | |
+| **68** | SQL Injection Mitigation & Prepared Statements | [ ] | [ ] | |
+| **69** | Database Backups, Migrations & Dumps | [ ] | [ ] | |
+| **70** | **Project #7: Normalized E-Commerce Database Schema** | [ ] | [ ] | |
+| **71** | Node.js Server Architecture & CommonJS vs ESM | [ ] | [ ] | |
+| **72** | Express.js Initialization & Server Lifecycles | [ ] | [ ] | |
+| **73** | REST API Architecture & Standard HTTP Status Codes | [ ] | [ ] | |
+| **74** | Express Routing, URL Params & Query Strings | [ ] | [ ] | |
+| **75** | Express Middleware Pipeline & CORS Policies | [ ] | [ ] | |
+| **76** | Node.js to MySQL Connectivity & Connection Pools | [ ] | [ ] | |
+| **77** | Implementing Full CRUD Endpoints with MySQL | [ ] | [ ] | |
+| **78** | MVC Architecture: Routing, Controllers & Services | [ ] | [ ] | |
+| **79** | Request Validation & Sanitization (Zod / Joi) | [ ] | [ ] | |
+| **80** | **Project #8: Products & Categories REST API** | [ ] | [ ] | |
+| **81** | Password Cryptography: Salt & Hash with Bcrypt | [ ] | [ ] | |
+| **82** | Stateless Authentication & JWT Architecture | [ ] | [ ] | |
+| **83** | User Registration & Login Authentication Pipeline | [ ] | [ ] | |
+| **84** | Route Protection Middleware & Token Verification | [ ] | [ ] | |
+| **85** | Role-Based Access Control (RBAC: Admin vs User) | [ ] | [ ] | |
+| **86** | Client-Server Architecture: Connecting React & Express | [ ] | [ ] | |
+| **87** | Axios Client Configuration & Auth Request Interceptors | [ ] | [ ] | |
+| **88** | React Authentication Context & Persistent Sessions | [ ] | [ ] | |
+| **89** | Protected Route Guards & Client-Side Redirection | [ ] | [ ] | |
+| **90** | UX Polish: Optimistic UI, Spinners & Toast Alerts | [ ] | [ ] | |
+| **91** | Multipart File & Image Uploads (Multer + FormData) | [ ] | [ ] | |
+| **92** | Environment Variables & Secret Key Management | [ ] | [ ] | |
+| **93** | Capstone: System Specifications & ERD Architecture | [ ] | [ ] | |
+| **94** | Capstone: Database Provisioning & Seed Data Setup | [ ] | [ ] | |
+| **95** | Capstone: Secure Backend API & Authentication Build | [ ] | [ ] | |
+| **96** | Capstone: Frontend UI Layout & Global Auth Wireup | [ ] | [ ] | |
+| **97** | Capstone: Core Feature Workflows & Business Logic | [ ] | [ ] | |
+| **98** | Capstone: Responsive Audit, Error Boundaries & Polish | [ ] | [ ] | |
+| **99** | Capstone: Cloud Deployment (Vercel, Render & Cloud DB)| [ ] | [ ] | |
+| **100**| **Graduation: Portfolio Polish, Resume & Technical Interview** | [ ] | [ ] | |

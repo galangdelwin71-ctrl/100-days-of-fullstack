@@ -1,107 +1,107 @@
-# 🎯 Days 51–60: Relational Databases & MySQL Basics
+# 🎯 Days 51–60: Relational Databases & MySQL Fundamentals
 
-Walang app na mabubuhay nang walang database! Dito mo matututunan kung paano mag-store, mag-organisa, at mag-query ng structured data gamit ang MySQL.
-
----
-
-### 📅 Day 51: Relational Database Concepts
-- **Konsepto**: Ano ang RDBMS (Relational Database Management System)?
-  - Tables (Entities), Rows (Records), Columns (Fields).
-  - Primary Key (Unique identifier ng bawat row).
-  - SQL vs NoSQL (Bakit SQL ang laging default sa mga kumpanya).
-- **Activity**: Mag-drawing ng concept diagram ng isang Paaralan (Students, Courses, Teachers).
-- **Output**: `day-51/erd-concept.png` o `.md`
+No production software survives without persistent storage. In this phase, you will master storing, organizing, and querying structured data using industry-standard **MySQL**.
 
 ---
 
-### 📅 Day 52: Setting Up MySQL & GUI Tools
-- **Konsepto**: Pag-install at pagpapatakbo ng MySQL server.
-  - Gamit ang XAMPP (Apache + MySQL) o standalone MySQL Server.
-  - GUI Tools: phpMyAdmin, MySQL Workbench, o DBeaver.
-- **Activity**: Patakbuhin ang MySQL sa iyong computer at gumawa ng unang database: `CREATE DATABASE fullstack_db;`.
-- **Output**: Screenshot ng bukas na database connection.
+### 📅 Day 51: Relational Database Architecture
+- **Concepts**: What is a Relational Database Management System (RDBMS)?
+  - Tables (Entities), Rows (Records), Columns (Attributes).
+  - Primary Key: Unique identifier constraint on every row.
+  - Why relational SQL remains the global enterprise standard over NoSQL for transactional integrity.
+- **Activity**: Draft an Entity-Relationship concept model for a University portal (Students, Courses, Faculty).
+- **Deliverable**: `day-51/erd-concept.md`
 
 ---
 
-### 📅 Day 53: SQL Data Types & Constraints
-- **Konsepto**: Pagpili ng tamang storage type para sa efficiency:
-  - Numbers: `INT`, `BIGINT`, `DECIMAL(10, 2)` (Laging DECIMAL para sa pera, huwag FLOAT!).
-  - Strings: `VARCHAR(255)`, `TEXT`.
-  - Dates: `DATE`, `DATETIME`, `TIMESTAMP`.
+### 📅 Day 52: Setting Up MySQL Server & GUI Clients
+- **Concepts**: Initializing a local database server:
+  - Running MySQL via XAMPP or standalone MySQL Server instance.
+  - Connecting through visual GUI tools: phpMyAdmin, MySQL Workbench, or DBeaver.
+- **Activity**: Launch your MySQL server and create your first database: `CREATE DATABASE fullstack_db;`.
+- **Deliverable**: Screenshot of active connection and database list.
+
+---
+
+### 📅 Day 53: SQL Data Types & Column Constraints
+- **Concepts**: Precision storage design:
+  - Numerical: `INT`, `BIGINT`, `DECIMAL(10, 2)` (Always use DECIMAL for currency, never FLOAT!).
+  - Text: `VARCHAR(255)`, `TEXT`.
+  - Temporal: `DATE`, `DATETIME`, `TIMESTAMP`.
   - Constraints: `NOT NULL`, `UNIQUE`, `DEFAULT`, `AUTO_INCREMENT`.
-- **Activity**: Isulat ang `CREATE TABLE` query para sa isang `users` table na may id, full_name, email, password_hash, created_at.
-- **Output**: `day-53/create-users.sql`
+- **Activity**: Write a `CREATE TABLE` query for a `users` table including id, full_name, email, password_hash, and created_at.
+- **Deliverable**: `day-53/create-users.sql`
 
 ---
 
-### 📅 Day 54: DDL Operations: CREATE, ALTER, DROP
-- **Konsepto**: Data Definition Language.
-  - `CREATE TABLE`
-  - `ALTER TABLE users ADD COLUMN phone_number VARCHAR(20);`
-  - `ALTER TABLE users DROP COLUMN phone_number;`
+### 📅 Day 54: DDL Mechanics: CREATE, ALTER, DROP
+- **Concepts**: Data Definition Language:
+  - `CREATE TABLE`.
+  - `ALTER TABLE users ADD COLUMN phone VARCHAR(20);`.
+  - `ALTER TABLE users MODIFY COLUMN phone VARCHAR(30);`.
   - `DROP TABLE` vs `TRUNCATE TABLE`.
-- **Activity**: Gumawa ng `products` table, magdagdag ng bagong column gamit ang `ALTER`, at i-modify ang data type nito.
-- **Output**: `day-54/ddl-practice.sql`
+- **Activity**: Create a `products` table, alter it to append a new column, and modify its constraint safely.
+- **Deliverable**: `day-54/ddl-practice.sql`
 
 ---
 
-### 📅 Day 55: DML Operations: INSERT & Basic SELECT
-- **Konsepto**: Data Manipulation Language.
-  - `INSERT INTO products (name, price, stock) VALUES ('Laptop', 45000.00, 10);`
-  - `SELECT * FROM products;`
-  - `SELECT name, price FROM products;`
-- **Activity**: Mag-insert ng 10 sample products sa iyong database gamit ang SQL script.
-- **Output**: `day-55/seed-products.sql`
+### 📅 Day 55: DML Mechanics: INSERT & Basic SELECT
+- **Concepts**: Data Manipulation Language:
+  - `INSERT INTO products (name, price, stock) VALUES ('Mechanical Keyboard', 2500.00, 15);`.
+  - `SELECT * FROM products;`.
+  - Column projection: `SELECT name, price FROM products;`.
+- **Activity**: Seed your database with 10 sample commercial products using a structured SQL script.
+- **Deliverable**: `day-55/seed-products.sql`
 
 ---
 
-### 📅 Day 56: Filtering Data with WHERE Clauses
-- **Konsepto**: Pagkuha ng specific na mga records:
-  - Operators: `=`, `!=`, `>`, `<`, `>=`, `<=`.
-  - Logical: `AND`, `OR`, `NOT`.
-  - Pattern matching: `LIKE '%phone%'` (Wildcards).
-  - Ranges & Sets: `BETWEEN 100 AND 500`, `IN ('Electronics', 'Clothing')`.
-  - Null checking: `IS NULL`, `IS NOT NULL`.
-- **Activity**: Sumulat ng 5 magkakaibang filter queries sa iyong `products` table.
-- **Output**: `day-56/filter-queries.sql`
+### 📅 Day 56: Filtering Records with WHERE Clauses
+- **Concepts**: Narrowing down query result sets:
+  - Comparison operators: `=`, `!=`, `>`, `<`, `>=`, `<=`.
+  - Logical operators: `AND`, `OR`, `NOT`.
+  - Pattern matching: `LIKE '%pro%'` (Wildcards).
+  - Ranges and sets: `BETWEEN 500 AND 2000`, `IN ('Electronics', 'Office')`.
+  - Null checks: `IS NULL`, `IS NOT NULL`.
+- **Activity**: Write 5 distinct filtering queries targeting specific price ranges, categories, and stock thresholds.
+- **Deliverable**: `day-56/filter-queries.sql`
 
 ---
 
-### 📅 Day 57: Sorting & Pagination (ORDER BY, LIMIT, OFFSET)
-- **Konsepto**: Paano ginagawa ang page 1, page 2, page 3 sa mga e-commerce sites?
-  - `ORDER BY price DESC` (Pinakamahal muna).
-  - `LIMIT 10 OFFSET 0` (Page 1: first 10 items).
-  - `LIMIT 10 OFFSET 10` (Page 2: next 10 items).
-- **Activity**: Sumulat ng pagination query para kunin ang Top 5 cheapest products.
-- **Output**: `day-57/pagination.sql`
+### 📅 Day 57: Sorting & Pagination: ORDER BY, LIMIT, OFFSET
+- **Concepts**: Implementing page navigation for web apps:
+  - `ORDER BY price DESC` (Highest price first).
+  - `LIMIT 10 OFFSET 0` (Page 1: items 1–10).
+  - `LIMIT 10 OFFSET 10` (Page 2: items 11–20).
+- **Activity**: Construct a query that retrieves the Top 5 most expensive products currently in stock.
+- **Deliverable**: `day-57/pagination.sql`
 
 ---
 
-### 📅 Day 58: Safe UPDATE & DELETE Queries
-- **Konsepto**: ⚠️ **CRITICAL WARNING**: Huwag na huwag magpapatakbo ng `UPDATE` o `DELETE` nang walang `WHERE` clause sa kumpanya!
-  - `UPDATE products SET price = 39999.00 WHERE id = 1;`
-  - `DELETE FROM products WHERE stock = 0;`
-  - Soft Deletes concept (`is_deleted` o `deleted_at` column).
-- **Activity**: I-update ang presyo ng 2 produkto at mag-delete ng 1 test record.
-- **Output**: `day-58/update-delete.sql`
+### 📅 Day 58: Safe UPDATE & DELETE Mutations
+- **Concepts**: ⚠️ **CRITICAL ENGINEERING WARNING**: Never execute an `UPDATE` or `DELETE` without a verified `WHERE` clause!
+  - `UPDATE products SET price = 2200.00 WHERE id = 1;`.
+  - `DELETE FROM products WHERE stock = 0;`.
+  - The Soft-Delete design pattern (`is_deleted BOOLEAN DEFAULT FALSE` or `deleted_at TIMESTAMP NULL`).
+- **Activity**: Execute targeted price updates and implement a soft-delete column update on dummy records.
+- **Deliverable**: `day-58/update-delete.sql`
 
 ---
 
-### 📅 Day 59: SQL Aggregate Functions & GROUP BY
-- **Konsepto**: Pagkuha ng mga statistics at summary reports:
-  - `COUNT(*)`, `SUM(price)`, `AVG(price)`, `MIN(price)`, `MAX(price)`.
-  - `GROUP BY category` (Pagkuha ng total sales o total stock per category).
-  - `HAVING COUNT(*) > 5` (Filtering groups).
-- **Activity**: Sumulat ng query na nagpapakita ng kabuuang bilang ng produkto at average price bawat kategorya.
-- **Output**: `day-59/aggregates.sql`
+### 📅 Day 59: Aggregations, GROUP BY & HAVING
+- **Concepts**: Computing summary metrics and reports:
+  - Aggregate functions: `COUNT(*)`, `SUM(price)`, `AVG(price)`, `MIN(price)`, `MAX(price)`.
+  - Grouping records: `GROUP BY category_id`.
+  - Filtering groups: `HAVING COUNT(*) > 5`.
+- **Activity**: Write a query that computes total inventory value and average product cost per category.
+- **Deliverable**: `day-59/aggregates.sql`
 
 ---
 
-### 📅 Day 60: 🏆 MINI-PROJECT #6 — University / Inventory Database Design
-- **Goal**: Gumawa ng standalone SQL script na may kumpletong database schema para sa isang School Inventory System.
+### 📅 Day 60: 🏆 MILESTONE PROJECT #6 — Inventory Database Schema & Scripts
+- **Objective**: Author a standalone production-grade SQL script modeling an Equipment and Inventory Management System.
 - **Requirements**:
   1. Tables: `departments`, `items`, `borrowers`, `transactions`.
-  2. Primary keys at valid data types sa bawat column.
-  3. Hindi bababa sa 15 rows ng sample mock data (`INSERT`).
-  4. 5 analytical queries (e.g. Most borrowed item, Items needing maintenance).
-- **Action**: I-commit ang `.sql` file sa inyong GitHub repo.
+  2. Strict primary keys, constraints, and valid data types.
+  3. Seed script containing at least 15 rows of realistic mock data.
+  4. 5 analytical queries (e.g., Highest demand items, Overdue borrowed assets).
+- **Verification**: Commit the `.sql` schema script to your repository.

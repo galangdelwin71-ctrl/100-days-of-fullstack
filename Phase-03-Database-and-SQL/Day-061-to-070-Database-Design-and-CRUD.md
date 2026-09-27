@@ -1,104 +1,105 @@
 # 🎯 Days 61–70: Schema Design, Joins & Advanced SQL
 
-Dito ka magiging eksperto sa pag-uugnay ng mga tables (Relationships) at pagsusulat ng kumplikadong queries na hinahanap sa mga technical interviews.
+In this module, you will master multi-table relationships, database normalization, and query optimization patterns tested in technical interviews.
 
 ---
 
-### 📅 Day 61: Foreign Keys & Relationships
-- **Konsepto**: Paano pinag-uugnay ang magkakaibang tables?
-  - Foreign Key (FK) constraint.
-  - **One-to-One (1:1)**: User -> UserProfile.
-  - **One-to-Many (1:N)**: Customer -> Orders.
-  - **Many-to-Many (N:M)**: Students <-> Courses (nangangailangan ng Junction/Pivot table).
-- **Activity**: Gumawa ng `categories` table at i-link ang `products` table gamit ang `category_id` foreign key.
-- **Output**: `day-61/foreign-keys.sql`
+### 📅 Day 61: Foreign Keys & Relational Cardinality
+- **Concepts**: Establishing relational constraints between tables:
+  - Foreign Key (FK) constraints: `FOREIGN KEY (category_id) REFERENCES categories(id)`.
+  - **One-to-One (1:1)**: User <-> UserProfile.
+  - **One-to-Many (1:N)**: Department <-> Employees.
+  - **Many-to-Many (N:M)**: Students <-> Courses (requires a Junction/Pivot table).
+- **Activity**: Create a `categories` table and bind it to `products` via a foreign key constraint.
+- **Deliverable**: `day-61/foreign-keys.sql`
 
 ---
 
 ### 📅 Day 62: Database Normalization (1NF, 2NF, 3NF)
-- **Konsepto**: Paano maiiwasan ang duplicate data at update anomalies?
-  - **1NF**: Atomic values (bawal ang comma-separated values sa isang cell).
-  - **2NF**: Lahat ng non-key attributes ay nakadepende sa buong primary key.
-  - **3NF**: Walang transitive dependencies (bawal ang column na nakadepende sa isa pang non-key column).
-- **Activity**: Kumuha ng un-normalized spreadsheet table at i-normalize ito sa tatlong separate tables (3NF).
-- **Output**: `day-62/normalization-case-study.md`
+- **Concepts**: Eliminating data redundancy and update anomalies:
+  - **1NF**: Atomic values (no comma-separated strings inside a single cell).
+  - **2NF**: All non-key columns depend on the entire primary key.
+  - **3NF**: No transitive dependencies (non-key columns must not depend on other non-key columns).
+- **Activity**: Take a denormalized spreadsheet export and normalize it into 3 clean relational tables meeting 3NF.
+- **Deliverable**: `day-62/normalization-case-study.md`
 
 ---
 
-### 📅 Day 63: SQL Joins: INNER JOIN & LEFT JOIN
-- **Konsepto**: Pagsasama ng data mula sa magkaibang tables sa iisang result:
-  - `INNER JOIN`: Lumalabas lang kapag may match sa dalawang tables.
-  - `LEFT JOIN`: Lumalabas lahat ng records mula sa kaliwa, kahit walang katumbas sa kanan (magiging `NULL`).
-- **Activity**: Kumuha ng listahan ng lahat ng Customers kasama ang kanilang mga Orders gamit ang `LEFT JOIN`.
-- **Output**: `day-63/joins-practice.sql`
+### 📅 Day 63: SQL Joins: INNER JOIN vs LEFT JOIN
+- **Concepts**: Merging datasets across related tables:
+  - `INNER JOIN`: Returns records only when there is a matching row in both tables.
+  - `LEFT JOIN`: Returns all rows from the primary table, filling missing foreign matches with `NULL`.
+- **Activity**: Retrieve a list of all customers alongside their registered orders using a `LEFT JOIN`.
+- **Deliverable**: `day-63/joins-practice.sql`
 
 ---
 
-### 📅 Day 64: Multi-Table Joins (Joining 3 or more tables)
-- **Konsepto**: Sa totoong app, karaniwang 3 hanggang 5 tables ang pinag-sasama:
-  - `orders` -> `order_items` -> `products` -> `customers`.
-- **Activity**: Sumulat ng query na naglalabas ng complete receipt details (Customer Name, Order Date, Product Name, Quantity, Subtotal).
-- **Output**: `day-64/multi-joins.sql`
+### 📅 Day 64: Multi-Table Joins in Production
+- **Concepts**: Real-world commercial queries spanning multiple tables:
+  - Joining 4 tables: `orders` -> `order_items` -> `products` -> `customers`.
+- **Activity**: Write a query that generates a full order receipt breakdown (Customer Name, Order Date, Item Title, Quantity, Unit Price, Line Total).
+- **Deliverable**: `day-64/multi-joins.sql`
 
 ---
 
-### 📅 Day 65: Subqueries & Nested SELECT Queries
-- **Konsepto**: Isang query sa loob ng isa pang query:
-  - Subquery sa `WHERE`: `WHERE price > (SELECT AVG(price) FROM products)`
-  - Subquery sa `FROM` (Derived tables).
-- **Activity**: Hanapin ang lahat ng produkto na mas mahal sa overall average price ng buong store.
-- **Output**: `day-65/subqueries.sql`
+### 📅 Day 65: Subqueries & Nested Queries
+- **Concepts**: Embedding query logic within another query:
+  - Subquery in `WHERE`: `WHERE price > (SELECT AVG(price) FROM products)`.
+  - Subquery in `FROM` (Derived tables).
+- **Activity**: Identify all products priced above the store-wide average price using a nested subquery.
+- **Deliverable**: `day-65/subqueries.sql`
 
 ---
 
-### 📅 Day 66: Database Indexing & Performance
-- **Konsepto**: Bakit bumabagal ang database kapag umabot na sa 1,000,000 rows?
+### 📅 Day 66: Database Indexing & Query Performance
+- **Concepts**: Why do database queries slow down as tables grow to 1,000,000 records?
   - Full Table Scan vs Index Seek.
-  - `CREATE INDEX idx_user_email ON users(email);`
-  - B-Tree index fundamentals.
-- **Activity**: Gamitin ang `EXPLAIN` keyword sa harap ng iyong query para makita kung gumamit ito ng index o nag-full table scan.
-- **Output**: `day-66/indexing-explain.sql`
+  - Creating indexes: `CREATE INDEX idx_user_email ON users(email);`.
+  - Using `EXPLAIN` to diagnose query plans and index usage.
+- **Activity**: Profile a slow query using `EXPLAIN`, attach an index to the filtered column, and observe the performance difference.
+- **Deliverable**: `day-66/indexing-explain.sql`
 
 ---
 
-### 📅 Day 67: Database Transactions (ACID Principles)
-- **Konsepto**: Paano sinisiguro na hindi mawawala ang pera sa bank transfer kapag nag-brownout sa gitna ng proseso?
+### 📅 Day 67: Database Transactions & ACID Guarantees
+- **Concepts**: How banks and stores prevent data corruption during crashes:
   - **A**tomicity, **C**onsistency, **I**solation, **D**urability.
-  - `START TRANSACTION;` -> `UPDATE` sender -> `UPDATE` receiver -> `COMMIT;` (o `ROLLBACK;` kung may error).
-- **Activity**: Sumulat ng transaction script na nagbabawas ng stock sa inventory at nag-i-insert ng record sa orders table nang sabay.
-- **Output**: `day-67/transactions.sql`
+  - `START TRANSACTION;` -> `UPDATE accounts SET balance = balance - 500 ...` -> `COMMIT;` (or `ROLLBACK;` on error).
+- **Activity**: Write a transaction block that decrements inventory stock and inserts an order record atomically.
+- **Deliverable**: `day-67/transactions.sql`
 
 ---
 
-### 📅 Day 68: SQL Injection Vulnerabilities & Prepared Statements
-- **Konsepto**: Ang pinaka-sikat na security exploit sa web history:
-  - Ano ang mangyayari kung nag-type ang hacker ng `' OR '1'='1` sa login box?
-  - Bakit hindi dapat nag-co-concatenate ng user input sa SQL string?
-  - Prepared statements at Parameterized queries (`?` placeholders).
-- **Activity**: Sumulat ng maikling documentation na nagpapaliwanag kung paano gumagana ang SQL injection at paano ito puksain.
-- **Output**: `day-68/sql-injection-prevention.md`
+### 📅 Day 68: SQL Injection Attacks & Prepared Statements
+- **Concepts**: The most notorious web security vulnerability:
+  - What happens when a malicious user inputs `' OR '1'='1` into a login field?
+  - Why string concatenation of user inputs into SQL queries is catastrophic.
+  - Prepared statements and parameterized query placeholders (`?`).
+- **Activity**: Write a technical security brief explaining the attack vector of SQL injection and the mathematical guarantee of prepared statements.
+- **Deliverable**: `day-68/sql-injection-prevention.md`
 
 ---
 
 ### 📅 Day 69: Database Dumps, Backups & Migrations
-- **Konsepto**: Paano mag-lipat ng database mula sa iyong laptop papunta sa cloud server?
-  - `mysqldump -u root -p my_db > backup.sql`
-  - Importing: `mysql -u root -p new_db < backup.sql`
-- **Activity**: I-export ang iyong local database bilang `.sql` file at i-import ito sa bagong database gamit ang terminal o phpMyAdmin.
-- **Output**: `day-69/backup-log.txt`
+- **Concepts**: Moving database schemas and records across development and production environments:
+  - CLI exports: `mysqldump -u root -p store_db > backup.sql`.
+  - CLI restoration: `mysql -u root -p new_db < backup.sql`.
+- **Activity**: Export your local development database to a `.sql` file and restore it into a clean test database.
+- **Deliverable**: `day-69/backup-log.txt`
 
 ---
 
-### 📅 Day 70: 🏆 MINI-PROJECT #7 — Normalized E-Commerce Database Schema
-- **Goal**: Gumawa ng production-ready relational database schema para sa isang kumpletong E-Commerce platform.
-- **Tables**:
-  - `users` (id, email, password, role)
+### 📅 Day 70: 🏆 MILESTONE PROJECT #7 — Normalized E-Commerce Database Schema
+- **Objective**: Design and deliver an enterprise-grade relational database schema for an E-Commerce platform.
+- **Required Tables**:
+  - `users` (id, email, password_hash, role, created_at)
   - `categories` (id, name, slug)
-  - `products` (id, category_id, title, price, stock)
+  - `products` (id, category_id, title, price, stock, is_active)
   - `orders` (id, user_id, total_amount, status, created_at)
   - `order_items` (id, order_id, product_id, quantity, unit_price)
 - **Queries to deliver**:
-  1. Script na nag-i-insert ng test data para sa bawat table.
-  2. Query para sa Monthly Sales Report.
-  3. Query para sa Top 3 Best-Selling Products gamit ang Joins at Group By.
-- **Action**: I-commit ang buong SQL project sa inyong GitHub repo.
+  1. Complete DDL schema script with primary and foreign key constraints.
+  2. Sample seed dataset covering all tables.
+  3. Monthly Sales Analytics report query using Joins and `GROUP BY`.
+  4. Top 3 Best-Selling Products query.
+- **Verification**: Commit the schema and query suite to GitHub!
