@@ -1,49 +1,25 @@
-# 📱 100 Days of Mobile App Development (React Native & Expo)
+# 🚀 100 Days of Full-Stack Web Development: Zero to Hireable
 
-A complete, beginner-friendly, zero-to-hero curriculum for aspiring **Mobile App Developers**. 
+A complete, 100-day progressive learning curriculum designed to take complete beginners from **absolute zero** to **production-ready Full-Stack Software Engineers**.
 
-Every single day is not just a syllabus—it contains a **complete written lesson**, **code snippets**, **line-by-line explanations**, and a **hands-on daily coding activity with solutions**.
-
----
-
-## 🚀 Why React Native & Expo?
-
-For beginners and professional mobile teams alike, **React Native with Expo** is the #1 modern mobile framework:
-
-1. **Write Once, Run Everywhere**: One codebase runs natively on both **Android** and **iOS (iPhone)**.
-2. **Instant Live Preview on Your Phone**: You don't need a high-end gaming PC or 30GB of Android Studio emulators. Just download the free **Expo Go** app on your phone, scan a QR code on your screen, and your app opens on your physical phone in seconds!
-3. **In-Demand Career**: Companies worldwide (Instagram, Shopify, Discord, Pinterest, Uber Eats) build their apps with React Native.
+Every single day from **Day 1 to Day 100** has its own dedicated learning module with:
+- 📖 **Concept Explained Simply** (Beginner-friendly explanation)
+- 💻 **Complete Working Code**
+- 🔍 **Line-by-Line Breakdown**
+- 🎯 **Hands-On Daily Challenge** with actionable checklist
 
 ---
 
-## 🛠️ Required Free Tools
+## 🗺️ The 6 Curriculum Phases
 
-Before Day 1, install these 3 free tools:
-1. **VS Code** (Code Editor on your computer): [code.visualstudio.com](https://code.visualstudio.com/)
-2. **Node.js LTS** (Runs JavaScript on your PC): [nodejs.org](https://nodejs.org/) (Download the Recommended/LTS version)
-3. **Expo Go App** (On your physical phone):
-   - Android: Download from Google Play Store ([Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent))
-   - iPhone: Download from Apple App Store ([Expo Go](https://apps.apple.com/app/expo-go/id982107779))
-
----
-
-## 🗺️ 100-Day Roadmap Overview
-
-```
-[Phase 1: Days 01–20] ──► Mobile Core (Expo Setup, Native UI Components, StyleSheet, Flexbox & Lists)
-[Phase 2: Days 21–40] ──► User Interaction, Forms, Navigation (Screens & Tabs) & Device Hardware (Camera, Storage)
-[Phase 3: Days 41–60] ──► Mobile State Management, REST API Integration & Offline Persistence
-[Phase 4: Days 61–75] ──► Backend API for Mobile (Node.js, Express, MySQL & Mobile Auth with JWT)
-[Phase 5: Days 76–90] ──► Advanced Mobile Features (Push Notifications, Maps/GPS, Biometric Fingerprint/FaceID)
-[Phase 6: Days 91–100]──► Grand Capstone App (Complete Production Mobile App), APK Build & App Store Prep
-```
+- **[Phase 1: Days 01–25: Frontend Foundations](./Phase-01-Frontend-Foundations)**: Web mechanics, Semantic HTML5, CSS Box Model, Flexbox, Grid, Responsive Media Queries, and Vanilla JavaScript basics.
+- **[Phase 2: Days 26–45: Modern JavaScript & React.js](./Phase-02-Modern-JS-and-React)**: Array methods (`map`, `filter`), Objects, DOM events, Async/Await, Fetch API, and React components (`useState`, `useEffect`, forms).
+- **[Phase 3: Days 46–65: Database & MySQL](./Phase-03-Database-and-MySQL)**: Relational schemas, Tables, Data types, CRUD, Aggregations, Joins, Normalization (3NF), Indexes, and Transactions.
+- **[Phase 4: Days 66–80: Backend & Node.js](./Phase-04-Backend-and-Node)**: Node.js, Express.js, RESTful API architecture, MySQL connection pools, MVC structure, Zod validation, and JWT authentication.
+- **[Phase 5: Days 81–90: Full-Stack Integration](./Phase-05-FullStack-Integration)**: Connecting React to Express, Axios interceptors, AuthContext, Protected Route guards, Toast alerts, and Multer file uploads.
+- **[Phase 6: Days 91–100: Grand Capstone & Deployment](./Phase-06-Grand-Capstone)**: Building an enterprise-grade full-stack platform, cloud deployment (Vercel, Render, Managed MySQL), and job interview mastery.
 
 ---
 
-## 🤝 How to Learn with a Study Buddy
-
-1. **Read the Day's Lesson**: Open the Markdown file for the day and read the concepts and code breakdowns.
-2. **Build the Exercise**: Type the code into your computer and preview it live on your phone.
-3. **Complete the Daily Challenge**: Solve the hands-on activity.
-4. **Update [TRACKER.md](./TRACKER.md)**: Mark `[x]` on your row and compare progress with your friend.
-5. **Push to GitHub**: Commit your work every single day!
+## 📊 Daily Progress Tracker
+Track your daily progress and compare with your study partner in **[TRACKER.md](./TRACKER.md)**!
